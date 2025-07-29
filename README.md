@@ -4,9 +4,9 @@ Website to automatically generate a customised timetable for revising topics.
 # Inputs
 
 1. Available times and days
-2. Lists of topics
+2. Lists of topics/subjects
 3. Number of weeks/deadline
-4. Additional Parameters
+4. Additional Parameters (Breaks, Recall)
 
 
 # Outputs
@@ -29,7 +29,7 @@ On selecting the tool, they are prompted to select the subjects they wish to rev
 
 They enter their available study times through a one-week calendar (e.g. Monday 16:00 - 18:00, Saturday 12:00 - 13:00 and 16:00 - 18:00).
 
-They can select from a list of other preferences (maximum 2 study hours per session, no studying after a certain time etc.)
+They can select from a list of other preferences. This includes breaks (an n-minute break every m minutes, or a Pomodoro structure) or Recall (bringing back specific topics later on).
 
 
 ### Generation

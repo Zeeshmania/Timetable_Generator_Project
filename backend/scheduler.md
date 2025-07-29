@@ -3,8 +3,31 @@
 An array consisting of:
 
 1. A dictionary with days as keys and times as values. Times are in 24-hour format, represented as: "11:11 - 12:22". 
-2. An array of subject names. These names are to be selected from a drop-down box, with the option to select other, where users can input their own subject.
-3. An ending date.
+2. A dictionary containing an subject names as keys and integers representing confidence levels as values.
+3. A string representing an ending date, selecting from a calendar pop-up (in YYYY-MM-DD format).
+
+For example:
+
+[
+    {
+        "Monday": ["16:00-18:00", "18:30 - 20:30"], 
+        "Tuesday": ["17:00-18:00", "19:00 - 20:15"], 
+        "Wednesday": [], 
+        "Thursday": ["16:00-18:00", "18:30 - 20:30"], 
+        "Friday": ["16:00-18:00", "18:30 - 20:30"], 
+        "Saturday": ["11:00-13:00", "13:30 - 15:00", "16:00 - 19:00", "19:30 - 21:00"], 
+        "Sunday": [], 
+
+    }
+        
+    {
+        "Maths": 9,
+        "English": 7,
+        "Science": 3
+    }
+
+    4
+        ]
 
 
 Suppose the user suppliess the following information:
@@ -73,6 +96,13 @@ Now, we just need to assign each study period a subject. Just keep a counter for
 2. Tuesday
  * 17:00 - 18:00 (SCIENCE)
  * 19:00 - 20:15 (ENGLISH)
-.
-.
-.
+
+
+... and so on.
+
+The program should:
+
+ * Calculate the total number of hours available to revise.
+ * Calculate the weightings for each subject
+ * Calculate the number of hours to be revised for each subject
+
